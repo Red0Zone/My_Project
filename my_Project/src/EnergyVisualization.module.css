@@ -1,0 +1,58 @@
+/* EnergyVisualization.module.css */
+.visualizationContainer {
+  height: 600px;
+  width: 100%;
+  display: flex; /* Enable Flexbox for centering */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: flex-start; /* Align items to the top, adjust if you want vertical centering */
+  padding-top: 20px; /* Add some padding from the top */
+}
+
+.viewButtons {
+  margin-bottom: 20px;
+  text-align: center; /* Center text within buttons container */
+  display: flex; /* Enable Flexbox for buttons */
+  justify-content: center; /* Center buttons horizontally */
+  gap: 10px; /* Add space between buttons using gap (modern flexbox) */
+}
+
+.viewButton {
+  margin-right: 0; /* Remove right margin as gap is used now */
+  font-weight: normal;
+  background-color: white;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease; /* Add smooth transition for hover/active effects */
+}
+
+.viewButton:hover {
+  background-color: #f0f0f0; /* Slightly darker background on hover */
+}
+
+.viewButtonActive {
+  font-weight: bold;
+  background-color: #e0e0e0;
+}
+
+.chartContainer {
+  height: 500px;
+  width: 800px;
+  /* Center the chart container itself */
+  margin-left: auto;
+  margin-right: auto;
+  /* Or use flexbox if visualizationContainer is flex container */
+  /* display: flex;
+    justify-content: center; */
+}
+
+.tooltip {
+  background: white;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
+  font-size: 0.9em; /* Slightly smaller font size for tooltip */
+}
